@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-n22-CorePlugin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-plugin-n22-CorePlugin" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>CorePlugin</name>
 	<description>A cordova plugin, a JS version of n22 SDK</description>
 	<keywords>cordova,n22</keywords>
     <js-module name="CorePlugin" src="www/CorePlugin.js">
-        <clobbers target="CorePlugin" />
+        <clobbers target="cordova.CorePlugin" />
     </js-module>
 	<!-- platform：支持的平台 android -->
 	<platform name="android">
