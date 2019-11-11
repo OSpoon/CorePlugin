@@ -45,7 +45,7 @@ public class CorePlugin extends CordovaPlugin {
             System.out.println(paramMap);
             try {
                 Object test;
-                test = ReflectUtil.invokeMethod(Class.forName("org.apache.cordova.plugin." + name).newInstance(), methodAction, new Class<?>[]{CallbackContext.class, Context.class, String.class},
+                test = ReflectUtil.invokeMethod(Class.forName("org.apache.cordova.n22.plugin." + name).newInstance(), methodAction, new Class<?>[]{CallbackContext.class, Context.class, String.class},
                         new Object[]{callbackContext, activity, parameterStr});
                 System.out.println(test);
             } catch (InstantiationException e) {
