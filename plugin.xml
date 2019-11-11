@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-n22-CorePlugin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>CorePlugin</name>
+	<description>A cordova plugin, a JS version of n22 SDK</description>
+	<keywords>cordova,n22</keywords>
+    <js-module name="CorePlugin" src="www/CorePlugin.js">
+        <clobbers target="CorePlugin" />
+    </js-module>
+	<!-- platform：支持的平台 android -->
+	<platform name="android">
+		<!--插件的配置信息，build的时候会添加到res/xml/config.xml 文件中-->
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="CorePlugin">
+				<param name="android-package" value="org.apache.cordova.n22.CorePlugin"/>
+			</feature>
+		</config-file>
+		<source-file src="src/android/CorePlugin.java" target-dir="src/org/apache/cordova/n22" />
+		<source-file src="src/android/ReflectUtil.java" target-dir="src/org/apache/cordova/n22" />
+		<source-file src="src/android/service/ActivityResultBackInterface.java" target-dir="src/org/apache/cordova/n22/service" />
+		<source-file src="src/android/service/MAInterface.java" target-dir="src/org/apache/cordova/n22/service" />
+		<source-file src="src/android/service/PermissionInterface.java" target-dir="src/org/apache/cordova/n22/service" />
+		<!--plugin-->
+		<source-file src="src/android/plugin/MADiallPhone.java" target-dir="src/org/apache/cordova/n22/plugin" />
+	</platform>
+</plugin>
