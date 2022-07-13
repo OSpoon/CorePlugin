@@ -1,4 +1,4 @@
-package org.apache.cordova.n22;
+package org.apache.cordova.it200;
 
 import android.annotation.SuppressLint;
 import android.util.ArrayMap;

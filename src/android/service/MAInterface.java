@@ -1,4 +1,4 @@
-package org.apache.cordova.n22.service;
+package org.apache.cordova.it200.service;
 
 public interface MAInterface extends PermissionInterface, ActivityResultBackInterface {
 

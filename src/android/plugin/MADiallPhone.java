@@ -1,4 +1,4 @@
-package org.apache.cordova.n22.plugin;
+package org.apache.cordova.it200.plugin;
 
 import android.app.Activity;
 import android.content.Context;
@@ -7,7 +7,7 @@ import android.net.Uri;
 import android.text.TextUtils;
 
 import org.apache.cordova.CallbackContext;
-import org.apache.cordova.n22.service.MAInterface;
+import org.apache.cordova.it200.service.MAInterface;
 import org.json.JSONException;
 import org.json.JSONObject;
 

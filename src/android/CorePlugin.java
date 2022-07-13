@@ -1,4 +1,4 @@
-package org.apache.cordova.n22;
+package org.apache.cordova.it200;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -45,7 +45,7 @@ public class CorePlugin extends CordovaPlugin {
             System.out.println(paramMap);
             try {
                 Object test;
-                test = ReflectUtil.invokeMethod(Class.forName("org.apache.cordova.n22.plugin." + name).newInstance(), methodAction, new Class<?>[]{CallbackContext.class, Context.class, String.class},
+                test = ReflectUtil.invokeMethod(Class.forName("org.apache.cordova.it200.plugin." + name).newInstance(), methodAction, new Class<?>[]{CallbackContext.class, Context.class, String.class},
                         new Object[]{callbackContext, activity, parameterStr});
                 System.out.println(test);
             } catch (InstantiationException e) {

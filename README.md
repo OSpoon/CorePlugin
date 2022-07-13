@@ -20,12 +20,12 @@ The plugin creates the object
 ```js
 /* 此交互js可公共使用
  * hybridStr 调用原生事例
- * MABjCaPlugin 为 业务类 类名
+ * MACallPlugin 为 业务类 类名
  * 202 方法ID
  * showSignMutiViewWithInfo 为方法名
  * ?问号后面为方法参数 
  */
-let hybridStr = 'hybrid://MABjCaPlugin:202/showSignMutiViewWithInfo?{"paramters":"hello"}';
+let hybridStr = 'hybrid://MACallPlugin:202/showSignMutiViewWithInfo?{"paramters":"hello"}';
 cordova.CorePlugin.hybridCallAction(hybridStr, (result)=>{
 	//调用插件 成功返回
 	console.log(result);
